@@ -1,0 +1,58 @@
+.AdminOperationMenus {
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(228, 228, 228, 0.493);
+  border-radius: 5px;
+  padding: 2px 10px;
+  z-index: 1;
+
+  .adminMenuLinks {
+    list-style: none;
+    padding: 0;
+
+    .adminLink {
+      display: flex;
+      align-items: center;
+      color: #333;
+      text-decoration: none;
+      padding: 6px 10px;
+      transition: background-color 0.3s;
+
+      &:hover {
+        .settingsIcon,
+        .savedIcon,
+        .logoutIcon,
+        .addRecipeIcon {
+          transform: scale(1.2);
+        }
+      }
+      .settingsIcon,
+      .savedIcon,
+      .logoutIcon,
+      .addRecipeIcon {
+        height: 25px;
+        width: 25px;
+        margin-right: 8px;
+
+        transition: all 0.3s ease-in-out;
+      }
+
+      .settingsIcon {
+        color: #252424;
+      }
+
+      .savedIcon {
+        color: #f80c0c;
+      }
+      .logoutIcon {
+        color: #058fb9;
+      }
+      .addRecipeIcon {
+        color: #f7a816;
+      }
+    }
+  }
+}
